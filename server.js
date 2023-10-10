@@ -1,6 +1,6 @@
 const http=require('http');
 http.createServer((req,res)=>{
-     res.writeHead(200,{'content-type':'text/plain'});
+     res.writeHead(200,{'content-type':'text/html'});
 
-     res.end("Hello World ")
+     res.end("<h1>Hello World </h1>")
  }).listen(5000)
